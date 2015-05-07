@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.Halow" name="[COLOR red]HALOW [COLOR green] LIVE[/COLOR]" version="4.11" provider-name="Halow">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver"  version="2.1.2"/>
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.beautifulsoup4" />
+	<import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Halow TV Free</summary>
+    <description lang="en">[COLOR red]Free Halow TV Live is free for all containing different live channels from different countries free for the whole world FB_> IPTV Halow TV Xbmc twitter_> @HalowTV.[/COLOR]</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.kurd" name="[COLOR red]Karwan.[COLOR green]TV[/COLOR]" version="1.1.1" provider-name="Halow">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>FB Halow Tv add ons</summary>
+    <description>Kurdistan Livestreams
+
+ http://karwan.tv</description>
+  </extension>
+</addon>
+
+<addon id="plugin.video.swefilmer"
+       name="SweFilmer"
+       version="1.6"
+       provider-name="Halow">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch content from swefilmer.</summary>
+    <summary lang="sv">Titta på innehåll från swefilmer.</summary>
+    <description lang="en">With this addon you can stream content from swefilmer (www.swefilmer.com).</description>
+	<description lang="sv">Med denna addon kan du strömma innehåll från swefilmer (www.swefilmer.com).</description>
+    <platform>all</platform>
+    <website>https://github.com/HalowTV</website>
+    <source>https://github.com/HalowTV</source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.youtube."
+	name="Youtube Halow"
+	version="4.2"
+	provider-name="Halow)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Halow iptv a Youtube Channel dedicated to Swedish Eng movies and films.</summary>
+    <description lang="en">Halow iptv a Youtube Channel dedicated to Swedish eng movies and films.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.Halowrepo" name="  [COLOR lime][B]HALOW [/COLOR][COLOR white]Repository[/B][/COLOR]" version="1.5.0" provider-name="HalowRepo">
+	<extension point="xbmc.addon.repository" name="  [COLOR lime][B]Halow[/COLOR][COLOR white]Repository[/B][/COLOR]">
+        <info compressed="false">https://raw.githubusercontent.com/HalowTV/HALOW-LIVE-TV/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/HalowTV/HALOW-LIVE-TV/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/HalowTV/HALOW-LIVE-TV/tree/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install my Addons</summary>
+		<description>Download and install addons from Halow Repo</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+</addons>
